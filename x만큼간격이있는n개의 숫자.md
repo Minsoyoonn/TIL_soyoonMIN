@@ -25,3 +25,14 @@ def solution(x, n):
   빈리스트를 생성후 for 문을 통해 첫째항부터 n항까지 도출하고, 그것을 리스트에 차래로 삽입한다.
   i는 0부터 시작하는 for 문이라 i=1부터 시작하길 원해 i+1 로 수정해주었다.
 - append 함수라는 좋은 경험을 했다.
+
+[모범답안]
+```
+def number_generator(x, n):
+    # 함수를 완성하세요
+    return [i * x + x for i in range(n)]
+print(number_generator(2, 5))
+```
+
+- for 문과 append를 return에서 한방에 해결하였다.... 
+- 깊은 자괴감이 들어...
